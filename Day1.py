@@ -1,6 +1,5 @@
 rawData = open('Day1-input.txt','r').read()
 parsedData = rawData.splitlines()
-index_store = []
 calibrationValueSum = 0
 for txtLine in parsedData:
     index_store = []
@@ -9,5 +8,6 @@ for txtLine in parsedData:
             index_store.append(i)
     calibrationValue = int(str(txtLine[min(index_store)]) + str(txtLine[max(index_store)]));
     calibrationValueSum += calibrationValue
-        
+print("the final answer is: *Tatarara *" + str(calibrationValueSum))        
+
 
